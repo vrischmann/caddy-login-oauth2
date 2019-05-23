@@ -132,3 +132,18 @@ What claims are available are determined by what Google gives us when we fetch t
 
 * `sub` which is the email of the user
 * `hd` which is the "Hosted Domain" of the organization if any.
+
+## Debugging
+
+To get debug information you can set an environment variable:
+
+    export LOGIN_OAUTH2_DEBUG=1
+    caddy ...
+
+Debug statements are printed using the default `log` package which caddy controls so you'll have to see where they go.
+
+You can force Caddy to log to stdout like this:
+
+    caddy -log=stdout
+
+All debug statements are prefixed with `[login-oauth2]`.
