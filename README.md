@@ -34,14 +34,14 @@ The options of the `login` directive are not final either: it will probably evol
 
 ## Installation
 
-The simplest way is to follow [the Caddy documentation](https://github.com/mholt/caddy#build) to build your binary.
+The simplest way is to follow [the Caddy documentation](https://github.com/caddyserver/caddy#build) to build your binary.
 
 Then you just need to import the plugin:
 
     package main
 
     import (
-            "github.com/mholt/caddy/caddy/caddymain"
+            "github.com/caddyserver/caddy/caddy/caddymain"
 
             _ "go.rischmann.fr/caddy-login-oauth2"
     )

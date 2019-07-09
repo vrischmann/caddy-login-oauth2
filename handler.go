@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
-	"github.com/mholt/caddy/caddyhttp/httpserver"
+	"github.com/caddyserver/caddy/caddyhttp/httpserver"
 	"go.rischmann.fr/caddy-login-oauth2/internal"
 	"golang.org/x/oauth2"
 	profileapi "google.golang.org/api/oauth2/v2"
